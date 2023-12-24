@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
   return (
     <div className="movie" key={imdbID}>
@@ -18,5 +19,14 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
     </div>
   );
 }
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <h2>Sidebar</h2>
+      {/* Add your sidebar content here */}
+    </div>
+  );
+};
 
 export default MovieCard;
